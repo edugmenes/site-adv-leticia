@@ -39,7 +39,7 @@ export function Hero() {
           >
             <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1660700508065-879917d364dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBicmF6aWxpYW4lMjB3b21hbiUyMGxhd3llciUyMGJ1c2luZXNzJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzc1NzU1MTE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="src\images\WhatsApp Image 2026-04-09 at 15.47.49 (2) - Copy.jpeg"
                 alt="Letícia Macena Bertolini Gimenes"
                 className="w-full h-full object-cover"
               />
@@ -59,7 +59,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-xl sm:text-2xl text-[#B3852D] mb-8"
+            className="text-xl sm:text-2xl text-[#D8B86C] mb-8"
           >
             Advogada Especialista em Direito Trabalhista
           </motion.p>

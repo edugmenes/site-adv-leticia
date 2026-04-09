@@ -35,7 +35,7 @@ export function Header() {
             whileHover={{ scale: 1.05 }}
             className="text-2xl text-[#293A4A]"
           >
-            LMB Gimenes
+            Letícia Bertolini
           </motion.div>
 
           <div className="hidden md:flex items-center gap-8">
