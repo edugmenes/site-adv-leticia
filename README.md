@@ -1,6 +1,6 @@
-# Site — Advogado Trabalhista
+# Site — Advogada Letícia
 
-Site profissional para advogado especializado em Direito do Trabalho e Processo do Trabalho.
+Site profissional para Dra. Letícia Bertolini, especializado em Direito do Trabalho e Processo do Trabalho.
 
 ## Stack
 - **React 18** + **Vite 5**
@@ -31,50 +31,6 @@ lawyer-site/
         └── WhatsAppFloat.jsx   # Botão flutuante WhatsApp
 ```
 
-## Como rodar
-
-```bash
-# 1. Instalar dependências
-npm install
-
-# 2. Rodar em desenvolvimento
-npm run dev
-
-# 3. Gerar build de produção
-npm run build
-
-# 4. Prévia do build
-npm run preview
-```
-
-## Personalização — Checklist
-
-Busque e substitua `[...]` em todos os arquivos:
-
-| Placeholder                      | O que colocar                        |
-|----------------------------------|--------------------------------------|
-| `[Nome do Advogado]`             | Nome completo do advogado            |
-| `[000.000]`                      | Número da OAB                        |
-| `5511999999999`                  | Número de WhatsApp (com DDI+DDD)     |
-| `contato@[seuemail].com.br`      | E-mail profissional                  |
-| `@[perfil]`                      | Perfil do Instagram                  |
-| `https://instagram.com/`         | URL completa do Instagram            |
-| `[N]+ anos`                      | Anos de experiência                  |
-| `São Paulo/SP`                   | Cidade de atuação                    |
-
-## Fotos
-Substitua os placeholders de foto nos componentes `Hero.jsx` e `About.jsx`
-por uma `<img>` real com a foto do advogado:
-
-```jsx
-// Exemplo — substitua o bloco de placeholder por:
-<img
-  src="/foto-advogado.jpg"
-  alt="Dr. [Nome] — Advogado Trabalhista"
-  className="absolute inset-0 w-full h-full object-cover"
-/>
-```
-
 ## Formulário de Contato
 O formulário em `Contact.jsx` abre o cliente de e-mail padrão do usuário via `mailto:`.
 Para envio real pelo servidor, integre com:
@@ -89,7 +45,6 @@ O projeto pode ser publicado em qualquer serviço de hospedagem estática:
 - **GitHub Pages**: use `gh-pages` com `base` configurado no Vite
 
 ## Paleta de Cores
-
 | Nome         | Hex        | Uso                          |
 |--------------|------------|------------------------------|
 | gold-500     | `#B3852D`  | Accent principal             |
