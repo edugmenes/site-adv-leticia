@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-charcoal-950 text-charcoal-100 font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-gold-500 text-charcoal-950;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-charcoal-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gold-600 rounded-full;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply font-sans text-xs tracking-widest2 text-gold-400 uppercase;
+  }
+
+  .gold-divider {
+    @apply w-12 h-px bg-gold-500;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-charcoal-950
+           font-sans font-medium text-sm tracking-wide px-7 py-3.5
+           transition-all duration-300 ease-out
+           hover:shadow-[0_0_24px_rgba(179,133,45,0.35)]
+           active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-charcoal-600 hover:border-gold-500
+           text-charcoal-200 hover:text-gold-400 font-sans font-medium text-sm tracking-wide
+           px-7 py-3.5 transition-all duration-300 ease-out;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20BC5A] text-white
+           font-sans font-medium text-sm tracking-wide px-7 py-3.5
+           transition-all duration-300 ease-out
+           hover:shadow-[0_0_24px_rgba(37,211,102,0.3)]
+           active:scale-[0.98];
+  }
+
+  .card-service {
+    @apply p-7 border border-charcoal-700 hover:border-gold-500/40
+           bg-charcoal-900/60 hover:bg-charcoal-800/60
+           transition-all duration-300 ease-out cursor-default;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+}
+
+/* Fade-in animation for sections */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+.animate-delay-400 { animation-delay: 0.4s; }
+.animate-delay-500 { animation-delay: 0.5s; }

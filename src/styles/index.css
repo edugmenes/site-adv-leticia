@@ -1,8 +1,0 @@
-@import './fonts.css';
-@import './tailwind.css';
-@import './theme.css';
-
-/* Smooth scrolling for the entire page */
-html {
-  scroll-behavior: smooth;
-}
