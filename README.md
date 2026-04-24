@@ -1,14 +1,11 @@
-# Site — Advogada Letícia
-
 Site profissional para Dra. Letícia Bertolini, especializado em Direito do Trabalho e Processo do Trabalho.
 
-## Stack
+### Stack
 - **React 18** + **Vite 5**
 - **Tailwind CSS 3**
 - Google Fonts: Playfair Display, Source Serif 4, DM Sans
 
-## Estrutura do Projeto
-
+### Estrutura do Projeto
 ```
 lawyer-site/
 ├── index.html                  # HTML raiz com SEO e Google Fonts
@@ -31,20 +28,20 @@ lawyer-site/
         └── WhatsAppFloat.jsx   # Botão flutuante WhatsApp
 ```
 
-## Formulário de Contato
+### Formulário de Contato
 O formulário em `Contact.jsx` abre o cliente de e-mail padrão do usuário via `mailto:`.
 Para envio real pelo servidor, integre com:
 - [Formspree](https://formspree.io) — simples, sem backend
 - [EmailJS](https://www.emailjs.com) — envio direto do frontend
 - Qualquer API de backend própria
 
-## Deploy
+### Deploy
 O projeto pode ser publicado em qualquer serviço de hospedagem estática:
 - **Vercel**: `vercel deploy`
 - **Netlify**: arraste a pasta `dist/` ou conecte o repositório
 - **GitHub Pages**: use `gh-pages` com `base` configurado no Vite
 
-## Paleta de Cores
+### Paleta de Cores
 | Nome         | Hex        | Uso                          |
 |--------------|------------|------------------------------|
 | gold-500     | `#B3852D`  | Accent principal             |
