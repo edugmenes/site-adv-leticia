@@ -57,20 +57,20 @@ export default function Hero() {
             </p>
 
             <div
-              className="flex flex-col sm:flex-row items-start sm:items-center gap-4 animate-fade-up animate-delay-300"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 animate-fade-up animate-delay-300"
               style={{ opacity: 0 }}
             >
               <a
                 href="https://wa.me/5511959876073?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20trabalhista."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-whatsapp"
+                className="btn-whatsapp flex justify-center"
                 aria-label="Falar no WhatsApp"
               >
                 <WhatsAppIcon />
                 Falar pelo WhatsApp
               </a>
-              <a href="#servicos" className="btn-outline">
+              <a href="#servicos" className="btn-outline flex justify-center">
                 Conhecer os Serviços
               </a>
             </div>
