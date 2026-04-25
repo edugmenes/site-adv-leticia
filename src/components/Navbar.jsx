@@ -40,7 +40,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden nav:flex items-center gap-8">
           {navLinks.map(link => (
             <li key={link.href}>
               <a
@@ -58,7 +58,7 @@ export default function Navbar() {
           href="https://wa.me/5511959876073?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex btn-primary text-xs"
+          className="hidden nav:inline-flex btn-primary text-xs"
           aria-label="Agendar consulta via WhatsApp"
         >
           Agendar Consulta
@@ -67,7 +67,7 @@ export default function Navbar() {
         {/* Hamburger */}
         <button
           onClick={() => setMenuOpen(v => !v)}
-          className="md:hidden flex flex-col gap-1.5 p-1"
+          className="nav:hidden flex flex-col gap-1.5 p-1"
           aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
         >
           <span className={`block w-6 h-px bg-cream-100 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
@@ -78,7 +78,7 @@ export default function Navbar() {
 
       {/* Mobile menu — always fully opaque regardless of scroll position */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
+        className={`nav:hidden overflow-hidden transition-all duration-300 ${
           menuOpen ? 'max-h-96 border-b border-navy-700' : 'max-h-0'
         } bg-navy-950`}
       >
