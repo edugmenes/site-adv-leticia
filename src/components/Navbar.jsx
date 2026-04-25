@@ -76,11 +76,11 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — always fully opaque regardless of scroll position */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          menuOpen ? 'max-h-96 border-b border-navy-800' : 'max-h-0'
-        } bg-navy-950/98 backdrop-blur-sm`}
+          menuOpen ? 'max-h-96 border-b border-navy-700' : 'max-h-0'
+        } bg-navy-950`}
       >
         <ul className="flex flex-col py-4 px-6 gap-1">
           {navLinks.map(link => (
@@ -99,10 +99,9 @@ export default function Navbar() {
               href="https://wa.me/5511959876073?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-whatsapp w-full justify-center"
+              className="btn-primary w-full justify-center"
               onClick={close}
             >
-              <WhatsAppIcon />
               Agendar Consulta
             </a>
           </li>

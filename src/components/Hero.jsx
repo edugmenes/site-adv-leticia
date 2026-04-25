@@ -10,8 +10,9 @@ export default function Hero() {
     >
       {/* Background geometric pattern */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div className="absolute -right-32 top-1/2 -translate-y-1/2 w-[560px] h-[560px] border border-gold-500/10 rotate-12" />
-        <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-[420px] h-[420px] border border-gold-500/8 rotate-12" />
+        {/* Squares hidden on mobile to avoid overlapping hero text */}
+        <div className="hidden md:block absolute -right-32 top-1/2 -translate-y-1/2 w-[560px] h-[560px] border border-gold-500/10 rotate-12" />
+        <div className="hidden md:block absolute -right-20 top-1/2 -translate-y-1/2 w-[420px] h-[420px] border border-gold-500/8 rotate-12" />
         <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/20 to-transparent" />
         <div
           className="absolute inset-0 opacity-[0.04]"

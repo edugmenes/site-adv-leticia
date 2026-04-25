@@ -5,10 +5,12 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-cream-50 text-navy-800 font-body antialiased;
+    overflow-x: hidden;
   }
 
   ::selection {
