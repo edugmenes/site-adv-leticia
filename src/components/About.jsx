@@ -1,3 +1,5 @@
+import foto01 from '../images/foto_01.jpeg'
+
 export default function About() {
   return (
     <section
@@ -18,7 +20,7 @@ export default function About() {
           <div className="md:col-span-4 flex justify-center md:justify-start" aria-hidden="true">
             <div className="relative w-56 h-72 md:w-64 md:h-80 shrink-0">
               <img
-                src="src/images/foto_01.jpeg"
+                src={foto01}
                 alt="Dra. Letícia Bertolini — Advogada Trabalhista"
                 className="absolute inset-0 w-full h-full object-cover"
               />

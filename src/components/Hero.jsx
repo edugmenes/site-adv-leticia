@@ -1,3 +1,5 @@
+import foto03 from '../images/foto_03.jpeg'
+
 // Hero sits on deep navy background — keeps the dark/elegant feel as the visual anchor
 export default function Hero() {
   return (
@@ -96,7 +98,7 @@ export default function Hero() {
           >
             <div className="relative w-64 h-80 md:w-80 md:h-[420px]">
               <img
-                src="src/images/foto_03.jpeg"
+                src={foto03}
                 alt="Dra. Letícia Bertolini — Advogada Trabalhista"
                 className="absolute inset-0 w-full h-full object-cover"
               />
