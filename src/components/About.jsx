@@ -61,9 +61,8 @@ export default function About() {
             </div>
 
             {/* Credentials bar — restrained */}
-            <div className="pt-6 border-t border-navy-100 grid sm:grid-cols-4 gap-6">
+            <div className="pt-6 border-t border-navy-100 grid sm:grid-cols-3 gap-6">
               {[
-                { value: 'OAB/SP', label: '513,127' },
                 { value: 'Especialista', label: 'Direito do Trabalho' },
                 { value: '+3 Anos de', label: 'de Experiência' },
                 { value: '+20 Casos', label: 'Bem Sucedidos' },
