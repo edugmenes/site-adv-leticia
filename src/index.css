@@ -8,18 +8,18 @@
   }
 
   body {
-    @apply bg-charcoal-950 text-charcoal-100 font-body antialiased;
+    @apply bg-cream-50 text-navy-800 font-body antialiased;
   }
 
   ::selection {
-    @apply bg-gold-500 text-charcoal-950;
+    @apply bg-gold-500 text-cream-50;
   }
 
   ::-webkit-scrollbar {
     width: 6px;
   }
   ::-webkit-scrollbar-track {
-    @apply bg-charcoal-900;
+    @apply bg-cream-200;
   }
   ::-webkit-scrollbar-thumb {
     @apply bg-gold-600 rounded-full;
@@ -28,24 +28,33 @@
 
 @layer components {
   .section-label {
-    @apply font-sans text-xs tracking-widest2 text-gold-400 uppercase;
+    @apply font-sans text-xs tracking-widest2 text-gold-600 uppercase;
   }
 
   .gold-divider {
     @apply w-12 h-px bg-gold-500;
   }
 
+  /* Primary button — used on light backgrounds */
   .btn-primary {
-    @apply inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-charcoal-950
+    @apply inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-cream-50
            font-sans font-medium text-sm tracking-wide px-7 py-3.5
            transition-all duration-300 ease-out
            hover:shadow-[0_0_24px_rgba(179,133,45,0.35)]
            active:scale-[0.98];
   }
 
+  /* Outline button — dark variant for hero (navy bg) */
   .btn-outline {
-    @apply inline-flex items-center gap-2 border border-charcoal-600 hover:border-gold-500
-           text-charcoal-200 hover:text-gold-400 font-sans font-medium text-sm tracking-wide
+    @apply inline-flex items-center gap-2 border border-navy-400 hover:border-gold-500
+           text-navy-100 hover:text-gold-400 font-sans font-medium text-sm tracking-wide
+           px-7 py-3.5 transition-all duration-300 ease-out;
+  }
+
+  /* Outline button — light variant for cream sections */
+  .btn-outline-light {
+    @apply inline-flex items-center gap-2 border border-navy-300 hover:border-gold-500
+           text-navy-600 hover:text-gold-600 font-sans font-medium text-sm tracking-wide
            px-7 py-3.5 transition-all duration-300 ease-out;
   }
 
@@ -57,9 +66,10 @@
            active:scale-[0.98];
   }
 
+  /* Card — used on cream/light backgrounds */
   .card-service {
-    @apply p-7 border border-charcoal-700 hover:border-gold-500/40
-           bg-charcoal-900/60 hover:bg-charcoal-800/60
+    @apply p-7 border border-navy-100 hover:border-gold-500/40
+           bg-white hover:bg-cream-50
            transition-all duration-300 ease-out cursor-default;
   }
 }
@@ -67,10 +77,6 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
-
-  .noise-bg {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
   }
 }
 

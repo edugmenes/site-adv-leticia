@@ -13,14 +13,14 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Nome: ${form.nome}\nE-mail: ${form.email}\n\nMensagem:\n${form.mensagem}`
     )
-    window.location.href = `mailto:contato@[seuemail].com.br?subject=${subject}&body=${body}`
+    window.location.href = `mailto:adv.leticiebertolini@gmail.com?subject=${subject}&body=${body}`
     setSent(true)
   }
 
   return (
     <section
       id="contato"
-      className="relative py-24 md:py-32 bg-charcoal-900"
+      className="relative py-24 md:py-32 bg-navy-50"
       aria-labelledby="contato-heading"
     >
       {/* Top rule */}
@@ -41,11 +41,11 @@ export default function Contact() {
               </div>
               <h2
                 id="contato-heading"
-                className="font-display text-3xl md:text-4xl font-medium text-charcoal-50 leading-tight mb-5"
+                className="font-display text-3xl md:text-4xl font-medium text-navy-900 leading-tight mb-5"
               >
                 Vamos conversar sobre o seu caso?
               </h2>
-              <p className="font-body text-charcoal-400 text-lg leading-relaxed">
+              <p className="font-body text-navy-500 text-lg leading-relaxed">
                 Entre em contato pelo canal de sua preferência. O atendimento inicial
                 é feito com atenção e sigilo, sem compromisso.
               </p>
@@ -54,7 +54,7 @@ export default function Contact() {
             {/* WhatsApp — primary CTA */}
             <div className="space-y-4">
               <a
-                href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20meu%20caso."
+                href="https://wa.me/5511959876073?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20meu%20caso."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp w-full justify-center text-base py-4"
@@ -63,7 +63,7 @@ export default function Contact() {
                 <WhatsAppIcon />
                 Iniciar conversa no WhatsApp
               </a>
-              <p className="font-sans text-xs text-charcoal-500 text-center">
+              <p className="font-sans text-xs text-navy-400 text-center">
                 Resposta rápida em horário comercial.
               </p>
             </div>
@@ -73,20 +73,20 @@ export default function Contact() {
               <ContactItem
                 icon={<EmailIcon />}
                 label="E-mail"
-                value="contato@[seuemail].com.br"
-                href="mailto:contato@[seuemail].com.br"
+                value="adv.leticiebertolini@gmail.com"
+                href="mailto:adv.leticiebertolini@gmail.com"
               />
               <ContactItem
                 icon={<PhoneIcon />}
                 label="Telefone / WhatsApp"
                 value="(11) 9 9999-9999"
-                href="tel:+5511999999999"
+                href="tel:+5511959876073"
               />
               <ContactItem
                 icon={<InstagramIcon />}
                 label="Instagram"
-                value="@[perfil]"
-                href="https://instagram.com/"
+                value="@adv.leticiabertolini"
+                href="https://instagram.com/adv.leticiabertolini"
               />
               <ContactItem
                 icon={<LocationIcon />}
@@ -98,16 +98,16 @@ export default function Contact() {
 
           {/* RIGHT — form */}
           <div className="md:col-span-7">
-            <div className="bg-charcoal-950 border border-charcoal-800 p-8 md:p-10">
-              <h3 className="font-display text-xl font-semibold text-charcoal-100 mb-8">
+            <div className="bg-white border border-navy-100 p-8 md:p-10">
+              <h3 className="font-display text-xl font-semibold text-navy-800 mb-8">
                 Envie uma mensagem
               </h3>
 
               {sent ? (
                 <div className="py-12 text-center space-y-3">
                   <div className="text-gold-400 text-3xl" aria-hidden="true">✓</div>
-                  <p className="font-body text-charcoal-200 text-lg">Mensagem enviada!</p>
-                  <p className="font-sans text-sm text-charcoal-400">
+                  <p className="font-body text-navy-700 text-lg">Mensagem enviada!</p>
+                  <p className="font-sans text-sm text-navy-500">
                     Em breve entraremos em contato.
                   </p>
                 </div>
@@ -132,7 +132,7 @@ export default function Contact() {
                     required
                   />
                   <div className="space-y-2">
-                    <label htmlFor="mensagem" className="font-sans text-xs text-charcoal-400 tracking-wide uppercase">
+                    <label htmlFor="mensagem" className="font-sans text-xs text-navy-500 tracking-wide uppercase">
                       Mensagem
                     </label>
                     <textarea
@@ -143,11 +143,11 @@ export default function Contact() {
                       value={form.mensagem}
                       onChange={handleChange}
                       required
-                      className="w-full bg-charcoal-800 border border-charcoal-700 focus:border-gold-500 text-charcoal-100 placeholder-charcoal-600 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200 resize-none"
+                      className="w-full bg-cream-50 border border-navy-100 focus:border-gold-500 text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200 resize-none"
                     />
                   </div>
                   <div className="flex items-center justify-between gap-4 pt-2">
-                    <p className="font-sans text-xs text-charcoal-600 leading-relaxed max-w-xs">
+                    <p className="font-sans text-xs text-navy-400 leading-relaxed max-w-xs">
                       Suas informações são confidenciais e utilizadas apenas para retorno de contato.
                     </p>
                     <button type="submit" className="btn-primary shrink-0">
@@ -168,7 +168,7 @@ export default function Contact() {
 function Field({ id, label, type, placeholder, value, onChange, required }) {
   return (
     <div className="space-y-2">
-      <label htmlFor={id} className="font-sans text-xs text-charcoal-400 tracking-wide uppercase">
+      <label htmlFor={id} className="font-sans text-xs text-navy-500 tracking-wide uppercase">
         {label}
       </label>
       <input
@@ -179,7 +179,7 @@ function Field({ id, label, type, placeholder, value, onChange, required }) {
         value={value}
         onChange={onChange}
         required={required}
-        className="w-full bg-charcoal-800 border border-charcoal-700 focus:border-gold-500 text-charcoal-100 placeholder-charcoal-600 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200"
+        className="w-full bg-cream-50 border border-navy-100 focus:border-gold-500 text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200"
       />
     </div>
   )
@@ -192,8 +192,8 @@ function ContactItem({ icon, label, value, href }) {
         {icon}
       </span>
       <div>
-        <p className="font-sans text-xs text-charcoal-500 uppercase tracking-wide mb-0.5">{label}</p>
-        <span className="font-body text-charcoal-200 group-hover:text-gold-400 transition-colors duration-200">
+        <p className="font-sans text-xs text-navy-400 uppercase tracking-wide mb-0.5">{label}</p>
+        <span className="font-body text-navy-700 group-hover:text-gold-400 transition-colors duration-200">
           {value}
         </span>
       </div>

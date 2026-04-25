@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react'
 
 const navLinks = [
-  { label: 'Início',       href: '#inicio' },
-  { label: 'Serviços',     href: '#servicos' },
-  { label: 'Sobre',        href: '#sobre' },
-  { label: 'Diferenciais', href: '#diferenciais' },
-  { label: 'Contato',      href: '#contato' },
+  { label: 'Início',        href: '#inicio' },
+  { label: 'Serviços',      href: '#servicos' },
+  { label: 'Sobre',         href: '#sobre' },
+  { label: 'Diferenciais',  href: '#diferenciais' },
+  { label: 'Contato',       href: '#contato' },
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled]     = useState(false)
-  const [menuOpen, setMenuOpen]     = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -24,18 +24,18 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-charcoal-950/95 backdrop-blur-sm border-b border-charcoal-800'
+          ? 'bg-navy-950/95 backdrop-blur-sm border-b border-navy-800'
           : 'bg-transparent'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
-        {/* Logo / Name */}
+        {/* Logo */}
         <a href="#inicio" className="flex flex-col leading-none group" onClick={close}>
-          <span className="font-display text-sm font-semibold text-charcoal-50 tracking-wide group-hover:text-gold-400 transition-colors duration-300">
-            Dr. [Nome do Advogado]
+          <span className="font-display text-sm font-semibold text-cream-50 tracking-wide group-hover:text-gold-400 transition-colors duration-300">
+            Dra. Letícia Bertolini
           </span>
           <span className="font-sans text-[10px] tracking-widest text-gold-500 uppercase mt-0.5">
-            Advogado Trabalhista
+            Advogada Trabalhista
           </span>
         </a>
 
@@ -45,7 +45,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="font-sans text-xs tracking-wide text-charcoal-300 hover:text-gold-400 transition-colors duration-300 uppercase"
+                className="font-sans text-xs tracking-wide text-navy-200 hover:text-gold-400 transition-colors duration-300 uppercase"
               >
                 {link.label}
               </a>
@@ -55,7 +55,7 @@ export default function Navbar() {
 
         {/* CTA desktop */}
         <a
-          href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+          href="https://wa.me/5511959876073?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex btn-primary text-xs"
@@ -71,17 +71,17 @@ export default function Navbar() {
           className="md:hidden flex flex-col gap-1.5 p-1"
           aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
         >
-          <span className={`block w-6 h-px bg-charcoal-100 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`block w-6 h-px bg-charcoal-100 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-px bg-charcoal-100 transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2.5' : ''}`} />
+          <span className={`block w-6 h-px bg-cream-100 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-6 h-px bg-cream-100 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-6 h-px bg-cream-100 transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2.5' : ''}`} />
         </button>
       </nav>
 
       {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          menuOpen ? 'max-h-96 border-b border-charcoal-800' : 'max-h-0'
-        } bg-charcoal-950/98 backdrop-blur-sm`}
+          menuOpen ? 'max-h-96 border-b border-navy-800' : 'max-h-0'
+        } bg-navy-950/98 backdrop-blur-sm`}
       >
         <ul className="flex flex-col py-4 px-6 gap-1">
           {navLinks.map(link => (
@@ -89,7 +89,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={close}
-                className="block py-3 font-sans text-sm text-charcoal-200 hover:text-gold-400 transition-colors border-b border-charcoal-800"
+                className="block py-3 font-sans text-sm text-navy-200 hover:text-gold-400 transition-colors border-b border-navy-800"
               >
                 {link.label}
               </a>
@@ -97,7 +97,7 @@ export default function Navbar() {
           ))}
           <li className="pt-4">
             <a
-              href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+              href="https://wa.me/5511959876073?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp w-full justify-center"

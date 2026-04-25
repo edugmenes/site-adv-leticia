@@ -41,16 +41,16 @@ export default function Differentials() {
   return (
     <section
       id="diferenciais"
-      className="relative py-24 md:py-32 bg-charcoal-950"
+      className="relative py-24 md:py-32 bg-cream-100"
       aria-labelledby="diferenciais-heading"
     >
       {/* Background accent */}
       <div
-        className="absolute right-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/15 to-transparent pointer-events-none"
+        className="absolute right-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/20 to-transparent pointer-events-none"
         aria-hidden="true"
       />
       <div
-        className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/15 to-transparent pointer-events-none"
+        className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent pointer-events-none"
         aria-hidden="true"
       />
 
@@ -64,12 +64,12 @@ export default function Differentials() {
             </div>
             <h2
               id="diferenciais-heading"
-              className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal-50 leading-tight"
+              className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-navy-900 leading-tight"
             >
               Por que escolher este escritório?
             </h2>
           </div>
-          <p className="font-body text-charcoal-400 text-lg leading-relaxed md:max-w-sm md:ml-auto">
+          <p className="font-body text-navy-500 text-lg leading-relaxed md:max-w-sm md:ml-auto">
             Estes são os princípios que guiam cada atendimento e cada decisão que tomamos
             em nome dos nossos clientes.
           </p>
@@ -88,28 +88,28 @@ export default function Differentials() {
                   {item.number}
                 </span>
                 <div className="space-y-3">
-                  <h3 className="font-display text-base font-semibold text-charcoal-100 group-hover:text-gold-400 transition-colors duration-300">
+                  <h3 className="font-display text-base font-semibold text-navy-800 group-hover:text-gold-400 transition-colors duration-300">
                     {item.title}
                   </h3>
-                  <p className="font-sans text-sm text-charcoal-400 leading-relaxed">
+                  <p className="font-sans text-sm text-navy-500 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
               </div>
               {/* Divider */}
-              <div className="mt-6 h-px bg-charcoal-800 group-hover:bg-gold-500/20 transition-colors duration-300" />
+              <div className="mt-6 h-px bg-navy-100 group-hover:bg-gold-500/20 transition-colors duration-300" />
             </article>
           ))}
         </div>
 
         {/* Pull quote */}
         <blockquote className="mt-20 md:mt-24 border-l-2 border-gold-500 pl-8 max-w-2xl mx-auto text-center md:text-left">
-          <p className="font-display text-xl md:text-2xl italic text-charcoal-200 leading-relaxed">
+          <p className="font-display text-xl md:text-2xl italic text-navy-700 leading-relaxed">
             "A advocacia que acredito é aquela em que o cliente sai sabendo
             exatamente o que aconteceu e sente que foi tratado com respeito."
           </p>
-          <footer className="mt-4 font-sans text-xs text-charcoal-500 tracking-wide uppercase">
-            Dr. [Nome do Advogado]
+          <footer className="mt-4 font-sans text-xs text-navy-400 tracking-wide uppercase">
+            Dra. Letícia Bertolini
           </footer>
         </blockquote>
       </div>

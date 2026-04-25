@@ -11,18 +11,25 @@ export default {
           600: '#9A6E22',
           700: '#7A5518',
         },
-        charcoal: {
-          50:  '#F5F5F4',
-          100: '#E8E7E5',
-          200: '#C9C7C2',
-          300: '#A8A49D',
-          400: '#7E7A72',
-          500: '#5d5951',
-          600: '#403D37',
-          700: '#2C2925',
-          800: '#1E1C19',
-          900: '#141210',
-          950: '#0D0C0A',
+        // Navy scale — replaces all dark charcoal tones
+        navy: {
+          50:  '#F0F3F8',
+          100: '#D8E0EE',
+          200: '#B0C0DC',
+          300: '#7E97BC',
+          400: '#506E99',
+          500: '#324F78',
+          600: '#1F3559',
+          700: '#152540',
+          800: '#0F1B30',
+          900: '#0A1220',
+          950: '#060C16',
+        },
+        // Cream scale — warm off-white for main backgrounds
+        cream: {
+          50:  '#FAFAF7',
+          100: '#F4F3EE',
+          200: '#EAE8E0',
         },
       },
       fontFamily: {
