@@ -1,3 +1,5 @@
+import foto03 from '../images/foto_03.jpeg'
+
 // Hero sits on deep navy background — keeps the dark/elegant feel as the visual anchor
 export default function Hero() {
   return (
@@ -8,9 +10,11 @@ export default function Hero() {
     >
       {/* Background geometric pattern */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        {/* Squares hidden on mobile to avoid overlapping hero text */}
+        {/* Squares shown md+ but with a radial dark mask so they never bleed over text */}
         <div className="hidden md:block absolute -right-32 top-1/2 -translate-y-1/2 w-[560px] h-[560px] border border-gold-500/10 rotate-12" />
         <div className="hidden md:block absolute -right-20 top-1/2 -translate-y-1/2 w-[420px] h-[420px] border border-gold-500/8 rotate-12" />
+        {/* Gradient mask — covers right half at tablet widths, fades out at lg+ */}
+        <div className="hidden md:block lg:hidden absolute inset-0 bg-gradient-to-l from-transparent via-navy-900/80 to-navy-900" />
         <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/20 to-transparent" />
         <div
           className="absolute inset-0 opacity-[0.04]"
@@ -97,7 +101,7 @@ export default function Hero() {
           >
             <div className="relative w-64 h-80 md:w-80 md:h-[420px]">
               <img
-                src="src/images/foto_03.jpeg"
+                src={foto03}
                 alt="Dra. Letícia Bertolini — Advogada Trabalhista"
                 className="absolute inset-0 w-full h-full object-cover"
               />
