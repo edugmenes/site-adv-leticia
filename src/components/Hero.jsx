@@ -96,7 +96,7 @@ export default function Hero() {
           >
             <div className="relative w-64 h-80 md:w-80 md:h-[420px]">
               <img
-                src="../images/foto_03.jpeg"
+                src="src/images/foto_03.jpeg"
                 alt="Dra. Letícia Bertolini — Advogada Trabalhista"
                 className="absolute inset-0 w-full h-full object-cover"
               />
