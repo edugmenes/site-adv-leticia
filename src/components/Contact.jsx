@@ -198,11 +198,10 @@ export default function Contact() {
                       maxLength={150}
                       aria-invalid={errors.mensagem ? 'true' : 'false'}
                       aria-describedby={errors.mensagem ? 'mensagem-error' : undefined}
-                      className={`w-full bg-cream-50 border ${
-                        errors.mensagem
-                          ? 'border-red-500'
-                          : 'border-navy-100 focus:border-gold-500'
-                      } text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200 resize-none`}
+                      className={`w-full bg-cream-50 border ${errors.mensagem
+                        ? 'border-red-500'
+                        : 'border-navy-100 focus:border-gold-500'
+                        } text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200 resize-none`}
                     />
 
                     <div className="flex justify-between gap-4">
@@ -268,9 +267,8 @@ function Field({
         maxLength={maxLength}
         aria-invalid={error ? 'true' : 'false'}
         aria-describedby={error ? `${id}-error` : undefined}
-        className={`w-full bg-cream-50 border ${
-          error ? 'border-red-500' : 'border-navy-100 focus:border-gold-500'
-        } text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200`}
+        className={`w-full bg-cream-50 border ${error ? 'border-red-500' : 'border-navy-100 focus:border-gold-500'
+          } text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200`}
       />
 
       {error && (
