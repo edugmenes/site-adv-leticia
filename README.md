@@ -1,11 +1,11 @@
-Site profissional para Dra. Letícia Bertolini, especialista em Direito do Trabalho e Processo do Trabalho.
+## Site profissional para Dra. Letícia Bertolini, especialista em Direito do Trabalho e Processo do Trabalho.
 
-## Stack
+### Stack
 - **React 18** + **Vite 5**
 - **Tailwind CSS 3**
 - Google Fonts: Playfair Display, Source Serif 4, DM Sans
 
-## Estrutura do Projeto
+### Estrutura do Projeto
 ```
 lawyer-site/
 ├── index.html                  # HTML raiz com SEO e Google Fonts
@@ -28,34 +28,3 @@ lawyer-site/
         ├── Footer.jsx          # Rodapé
         └── WhatsAppFloat.jsx   # Botão flutuante WhatsApp
 ```
-
-## Como rodar
-```bash
-# 1. Instalar dependências
-npm install
-
-# 2. Rodar em desenvolvimento
-npm run dev
-
-# 3. Gerar build de produção
-npm run build
-
-# 4. Prévia do build
-npm run preview
-```
-
-## Formulário de Contato
-O formulário em `Contact.jsx` abre o cliente de e-mail padrão do usuário via `mailto:`.
-Para envio real pelo servidor, integrar com:
-- [Formspree](https://formspree.io)   — simples, sem backend
-- [EmailJS](https://www.emailjs.com)  — envio direto do frontend
-
-## Paleta de Cores
-| Nome         | Hex        | Uso                          |
-|--------------|------------|------------------------------|
-| gold-500     | `#B3852D`  | Accent principal             |
-| gold-400     | `#C4952E`  | Hover / destaques            |
-| charcoal-950 | `#0D0C0A`  | Background principal         |
-| charcoal-900 | `#141210`  | Background secundário        |
-| charcoal-50  | `#F5F5F4`  | Texto principal              |
-| charcoal-300 | `#A8A49D`  | Texto de suporte             |

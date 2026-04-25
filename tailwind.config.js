@@ -11,7 +11,6 @@ export default {
           600: '#9A6E22',
           700: '#7A5518',
         },
-        // Navy scale — replaces all dark charcoal tones
         navy: {
           50:  '#F0F3F8',
           100: '#D8E0EE',
@@ -25,7 +24,6 @@ export default {
           900: '#0A1220',
           950: '#060C16',
         },
-        // Cream scale — warm off-white for main backgrounds
         cream: {
           50:  '#FAFAF7',
           100: '#F4F3EE',
