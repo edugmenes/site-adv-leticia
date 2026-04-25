@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-14 md:py-16">
-        <div className="grid md:grid-cols-12 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
 
           {/* Brand block */}
-          <div className="md:col-span-4 space-y-5">
+          <div className="sm:col-span-2 lg:col-span-1 space-y-5">
             <div>
               <p className="font-display text-lg font-semibold text-cream-50 tracking-wide">
                 Dra. Letícia Bertolini
@@ -24,12 +24,12 @@ export default function Footer() {
               Defenda seus direitos com quem entende.
             </p>
             <p className="font-sans text-xs text-navy-400">
-              OAB/SP 513.127
+              OAB/SP nº a preencher
             </p>
           </div>
 
           {/* Navigation */}
-          <nav className="md:col-span-3 md:col-start-6" aria-label="Mapa do site">
+          <nav aria-label="Mapa do site">
             <p className="font-sans text-xs tracking-widest text-gold-500 uppercase mb-5">
               Navegação
             </p>
@@ -54,7 +54,7 @@ export default function Footer() {
           </nav>
 
           {/* Contact quick links */}
-          <div className="md:col-span-3 md:col-start-10">
+          <div className="min-w-0">
             <p className="font-sans text-xs tracking-widest text-gold-500 uppercase mb-5">
               Contato
             </p>
@@ -70,13 +70,13 @@ export default function Footer() {
                   WhatsApp
                 </a>
               </li>
-              <li>
+              <li className="min-w-0">
                 <a
                   href="mailto:adv.leticiebertolini@gmail.com"
-                  className="font-sans text-sm text-navy-300 hover:text-gold-400 transition-colors duration-200 flex items-center gap-2"
+                  className="font-sans text-sm text-navy-300 hover:text-gold-400 transition-colors duration-200 flex items-start gap-2 min-w-0"
                 >
-                  <span className="w-1 h-1 rounded-full bg-gold-500 shrink-0" aria-hidden="true" />
-                  adv.leticiebertolini@gmail.com
+                  <span className="w-1 h-1 rounded-full bg-gold-500 shrink-0 mt-2" aria-hidden="true" />
+                  <span className="break-all">adv.leticiebertolini@gmail.com</span>
                 </a>
               </li>
               <li>
@@ -93,7 +93,7 @@ export default function Footer() {
               <li className="pt-1">
                 <span className="font-sans text-sm text-navy-300 flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-navy-600 shrink-0" aria-hidden="true" />
-                  Região do ABC - SP
+                  Região do ABC — SP
                 </span>
               </li>
             </ul>
@@ -101,7 +101,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-navy-700 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-8 border-t border-navy-700 flex flex-col items-center gap-3 text-center sm:flex-row sm:justify-between sm:text-left">
           <p className="font-sans text-xs text-navy-400">
             © {currentYear} Dra. Letícia Bertolini — Todos os direitos reservados.
           </p>

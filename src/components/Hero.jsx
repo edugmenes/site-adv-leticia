@@ -1,5 +1,3 @@
-import foto03 from '../images/foto_03.jpeg'
-
 // Hero sits on deep navy background — keeps the dark/elegant feel as the visual anchor
 export default function Hero() {
   return (
@@ -27,10 +25,10 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 w-full pt-28 pb-20 md:pt-36 md:pb-28">
-        <div className="grid md:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
           {/* LEFT — content */}
-          <div className="md:col-span-7 space-y-8">
+          <div className="lg:col-span-7 space-y-8">
             <div className="flex items-center gap-4 animate-fade-up" style={{ opacity: 0 }}>
               <div className="gold-divider" />
               <span className="section-label" style={{ color: '#C4952E' }}>Direito do Trabalho e Processo do Trabalho</span>
@@ -59,11 +57,11 @@ export default function Hero() {
               style={{ opacity: 0 }}
             >
               <a
-                href="https://wa.me/5511959876073?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20meu%20caso."
+                href="https://wa.me/5511959876073?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20trabalhista."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp"
-                aria-label="Falar pelo WhatsApp"
+                aria-label="Falar no WhatsApp"
               >
                 <WhatsAppIcon />
                 Falar pelo WhatsApp
@@ -93,13 +91,13 @@ export default function Hero() {
 
           {/* RIGHT — visual block */}
           <div
-            className="md:col-span-5 flex justify-center md:justify-end animate-fade-up animate-delay-500"
+            className="hidden lg:flex lg:col-span-5 justify-center lg:justify-end animate-fade-up animate-delay-500"
             style={{ opacity: 0 }}
             aria-hidden="true"
           >
             <div className="relative w-64 h-80 md:w-80 md:h-[420px]">
               <img
-                src={foto03}
+                src="src/images/foto_03.jpeg"
                 alt="Dra. Letícia Bertolini — Advogada Trabalhista"
                 className="absolute inset-0 w-full h-full object-cover"
               />

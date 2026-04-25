@@ -1,5 +1,3 @@
-import foto01 from '../images/foto_01.jpeg'
-
 export default function About() {
   return (
     <section
@@ -14,13 +12,13 @@ export default function About() {
       />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <div className="grid md:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
           {/* LEFT — Photo block */}
-          <div className="md:col-span-4 flex justify-center md:justify-start" aria-hidden="true">
+          <div className="lg:col-span-4 flex justify-center lg:justify-start" aria-hidden="true">
             <div className="relative w-56 h-72 md:w-64 md:h-80 shrink-0">
               <img
-                src={foto01}
+                src="src/images/foto_01.jpeg"
                 alt="Dra. Letícia Bertolini — Advogada Trabalhista"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -31,7 +29,7 @@ export default function About() {
           </div>
 
           {/* RIGHT — Content */}
-          <div className="md:col-span-8 space-y-6">
+          <div className="lg:col-span-8 space-y-6">
             <div className="flex items-center gap-4">
               <div className="gold-divider" />
               <span className="section-label">Sobre</span>
@@ -65,9 +63,9 @@ export default function About() {
             {/* Credentials bar — restrained */}
             <div className="pt-6 border-t border-navy-100 grid sm:grid-cols-3 gap-6">
               {[
+                { value: 'OAB/SP', label: 'Nº a preencher' },
                 { value: 'Especialista', label: 'Direito do Trabalho' },
-                { value: '+3 Anos de', label: 'de Experiência' },
-                { value: '+20 Casos', label: 'Bem Sucedidos' },
+                { value: 'Anos de', label: 'de Experiência' },
               ].map(item => (
                 <div key={item.label} className="space-y-1">
                   <p className="font-display text-xl font-semibold text-gold-400">{item.value}</p>
