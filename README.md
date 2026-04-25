@@ -1,6 +1,4 @@
-# Site — Advogado Trabalhista
-
-Site profissional para advogado especializado em Direito do Trabalho e Processo do Trabalho.
+Site profissional para Dra. Letícia Bertolini, especialista em Direito do Trabalho e Processo do Trabalho.
 
 ## Stack
 - **React 18** + **Vite 5**
@@ -8,7 +6,6 @@ Site profissional para advogado especializado em Direito do Trabalho e Processo 
 - Google Fonts: Playfair Display, Source Serif 4, DM Sans
 
 ## Estrutura do Projeto
-
 ```
 lawyer-site/
 ├── index.html                  # HTML raiz com SEO e Google Fonts
@@ -20,6 +17,7 @@ lawyer-site/
     ├── main.jsx                # Ponto de entrada React
     ├── App.jsx                 # Composição das seções
     ├── index.css               # Tailwind + estilos globais
+    ├── images                  # Pasta para armazenar fotos
     └── components/
         ├── Navbar.jsx          # Navegação fixa com menu mobile
         ├── Hero.jsx            # Seção principal com CTA
@@ -32,7 +30,6 @@ lawyer-site/
 ```
 
 ## Como rodar
-
 ```bash
 # 1. Instalar dependências
 npm install
@@ -47,49 +44,13 @@ npm run build
 npm run preview
 ```
 
-## Personalização — Checklist
-
-Busque e substitua `[...]` em todos os arquivos:
-
-| Placeholder                      | O que colocar                        |
-|----------------------------------|--------------------------------------|
-| `[Nome do Advogado]`             | Nome completo do advogado            |
-| `[000.000]`                      | Número da OAB                        |
-| `5511999999999`                  | Número de WhatsApp (com DDI+DDD)     |
-| `contato@[seuemail].com.br`      | E-mail profissional                  |
-| `@[perfil]`                      | Perfil do Instagram                  |
-| `https://instagram.com/`         | URL completa do Instagram            |
-| `[N]+ anos`                      | Anos de experiência                  |
-| `São Paulo/SP`                   | Cidade de atuação                    |
-
-## Fotos
-Substitua os placeholders de foto nos componentes `Hero.jsx` e `About.jsx`
-por uma `<img>` real com a foto do advogado:
-
-```jsx
-// Exemplo — substitua o bloco de placeholder por:
-<img
-  src="/foto-advogado.jpg"
-  alt="Dr. [Nome] — Advogado Trabalhista"
-  className="absolute inset-0 w-full h-full object-cover"
-/>
-```
-
 ## Formulário de Contato
 O formulário em `Contact.jsx` abre o cliente de e-mail padrão do usuário via `mailto:`.
-Para envio real pelo servidor, integre com:
-- [Formspree](https://formspree.io) — simples, sem backend
-- [EmailJS](https://www.emailjs.com) — envio direto do frontend
-- Qualquer API de backend própria
-
-## Deploy
-O projeto pode ser publicado em qualquer serviço de hospedagem estática:
-- **Vercel**: `vercel deploy`
-- **Netlify**: arraste a pasta `dist/` ou conecte o repositório
-- **GitHub Pages**: use `gh-pages` com `base` configurado no Vite
+Para envio real pelo servidor, integrar com:
+- [Formspree](https://formspree.io)   — simples, sem backend
+- [EmailJS](https://www.emailjs.com)  — envio direto do frontend
 
 ## Paleta de Cores
-
 | Nome         | Hex        | Uso                          |
 |--------------|------------|------------------------------|
 | gold-500     | `#B3852D`  | Accent principal             |
