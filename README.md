@@ -1,4 +1,5 @@
-## Site profissional para Dra. Letícia Bertolini, especialista em Direito do Trabalho e Processo do Trabalho.
+## Site Dra. Letícia Bertolini
+Site profissional para advogada trabalhista, especialista em Direito do Trabalho e Processo do Trabalho.
 
 ### Stack
 - **React 18** + **Vite 5**
