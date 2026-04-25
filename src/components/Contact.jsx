@@ -64,12 +64,12 @@ export default function Contact() {
                 Iniciar conversa no WhatsApp
               </a>
               <p className="font-sans text-xs text-navy-400 text-center">
-                Resposta rápida em horário comercial.
+                Atendimento de segunda a sexta-feira, das 9h às 18h..
               </p>
             </div>
 
             {/* Contact info list */}
-            <ul className="space-y-5" aria-label="Informações de contato">
+            <ul className="space-y-2.5" aria-label="Informações de contato">
               <ContactItem
                 icon={<EmailIcon />}
                 label="E-mail"
@@ -79,7 +79,7 @@ export default function Contact() {
               <ContactItem
                 icon={<PhoneIcon />}
                 label="Telefone / WhatsApp"
-                value="(11) 9 9999-9999"
+                value="(11) 9 5987-6073"
                 href="tel:+5511959876073"
               />
               <ContactItem
@@ -91,7 +91,7 @@ export default function Contact() {
               <ContactItem
                 icon={<LocationIcon />}
                 label="Atendimento"
-                value="Presencial e Online — São Paulo/SP"
+                value="Presencial e Online — Região do ABC/SP"
               />
             </ul>
           </div>
@@ -186,21 +186,28 @@ function Field({ id, label, type, placeholder, value, onChange, required }) {
 }
 
 function ContactItem({ icon, label, value, href }) {
-  const inner = (
-    <li className="flex items-start gap-4 group">
+  const content = (
+    <div className="flex items-start gap-4 group">
       <span className="text-gold-500 mt-0.5 shrink-0 group-hover:text-gold-300 transition-colors duration-200">
         {icon}
       </span>
       <div>
         <p className="font-sans text-xs text-navy-400 uppercase tracking-wide mb-0.5">{label}</p>
-        <span className="font-body text-navy-700 group-hover:text-gold-400 transition-colors duration-200">
+        <span className="font-body text-navy-600 group-hover:text-gold-600 transition-colors duration-200">
           {value}
         </span>
       </div>
+    </div>
+  )
+
+  return (
+    <li>
+      {href
+        ? <a href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">{content}</a>
+        : content
+      }
     </li>
   )
-  if (href) return <a href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">{inner}</a>
-  return inner
 }
 
 function WhatsAppIcon() {

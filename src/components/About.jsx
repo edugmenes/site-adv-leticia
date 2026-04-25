@@ -61,11 +61,12 @@ export default function About() {
             </div>
 
             {/* Credentials bar — restrained */}
-            <div className="pt-6 border-t border-navy-100 grid sm:grid-cols-3 gap-6">
+            <div className="pt-6 border-t border-navy-100 grid sm:grid-cols-4 gap-6">
               {[
-                { value: 'OAB/SP', label: 'Nº a preencher' },
+                { value: 'OAB/SP', label: '513,127' },
                 { value: 'Especialista', label: 'Direito do Trabalho' },
-                { value: 'Anos de', label: 'de Experiência' },
+                { value: '+3 Anos de', label: 'de Experiência' },
+                { value: '+20 Casos', label: 'Bem Sucedidos' },
               ].map(item => (
                 <div key={item.label} className="space-y-1">
                   <p className="font-display text-xl font-semibold text-gold-400">{item.value}</p>

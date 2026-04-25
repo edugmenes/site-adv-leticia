@@ -24,7 +24,7 @@ export default function Footer() {
               Defenda seus direitos com quem entende.
             </p>
             <p className="font-sans text-xs text-navy-400">
-              OAB/SP nº a preencher
+              OAB/SP 513.127
             </p>
           </div>
 
