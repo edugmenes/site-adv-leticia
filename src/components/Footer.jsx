@@ -93,7 +93,7 @@ export default function Footer() {
               <li className="pt-1">
                 <span className="font-sans text-sm text-navy-300 flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-navy-600 shrink-0" aria-hidden="true" />
-                  São Paulo — SP
+                  Região do ABC - SP
                 </span>
               </li>
             </ul>

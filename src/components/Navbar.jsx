@@ -61,7 +61,6 @@ export default function Navbar() {
           className="hidden md:inline-flex btn-primary text-xs"
           aria-label="Agendar consulta via WhatsApp"
         >
-          <WhatsAppIcon />
           Agendar Consulta
         </a>
 
