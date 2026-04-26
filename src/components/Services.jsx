@@ -106,7 +106,7 @@ export default function Services() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-14 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="mt-14 flex flex-col sm:flex-row items-center gap-4">
           <a
             href="https://wa.me/5511959876073?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20meus%20direitos%20trabalhistas."
             target="_blank"

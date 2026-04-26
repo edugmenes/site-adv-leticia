@@ -69,7 +69,7 @@ export default function About() {
                 { value: '+3 Anos de', label: 'de Experiência' },
                 { value: '+20 Casos', label: 'Bem Sucedidos' },
               ].map(item => (
-                <div key={item.label} className="space-y-1">
+                <div key={item.label} className="space-y-1 text-center">
                   <p className="font-display text-xl font-semibold text-gold-400">{item.value}</p>
                   <p className="font-sans text-xs text-navy-400 tracking-wide">{item.label}</p>
                 </div>

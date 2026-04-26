@@ -95,7 +95,7 @@ export default function Hero() {
 
           {/* RIGHT — visual block */}
           <div
-            className="hidden lg:flex lg:col-span-5 justify-center lg:justify-end animate-fade-up animate-delay-500"
+            className="flex lg:col-span-5 justify-center lg:justify-end animate-fade-up animate-delay-500 mt-8 lg:mt-0"
             style={{ opacity: 0 }}
             aria-hidden="true"
           >
