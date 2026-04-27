@@ -98,7 +98,7 @@
                   href="https://wa.me/5511959876073?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20meu%20caso."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-whatsapp w-full justify-center text-base py-4"
+                  className="btn-whatsapp w-full justify-center text-center text-base py-4"
                   aria-label="Contatar pelo WhatsApp"
                 >
                   <WhatsAppIcon />
