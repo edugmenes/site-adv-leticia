@@ -1,6 +1,23 @@
+import { useRef, useEffect } from 'react'
 import foto01 from '../images/foto_01.jpeg'
 
 export default function About() {
+  const imgRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-up')
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.2 }
+    )
+    if (imgRef.current) observer.observe(imgRef.current)
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <section
       id="sobre"
@@ -18,7 +35,7 @@ export default function About() {
 
           {/* LEFT — Photo block */}
           <div className="lg:col-span-4 flex justify-center lg:justify-start" aria-hidden="true">
-            <div className="relative w-64 h-80 md:w-80 md:h-[420px] shrink-0">
+            <div  ref={imgRef} className="relative w-64 h-80 md:w-80 md:h-[420px] shrink-0 opacity-0">
               <img
                 src={foto01}
                 alt="Dra. Letícia Bertolini — Advogada Trabalhista"
