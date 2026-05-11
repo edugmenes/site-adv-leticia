@@ -5,7 +5,7 @@ import About from './components/About'
 import Differentials from './components/Differentials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import AgentFloat from './components/AgentFloat'
+import { HurcaneWidget } from 'hurcane-react'
 
 export default function App() {
   return (
@@ -19,7 +19,12 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-      <AgentFloat />
+      <HurcaneWidget
+        agentId="tire-suas-duvidas-1778523717415"
+        color="#C4952E"
+        theme="light"
+        position="bottom-right"
+      />
     </>
   )
 }
