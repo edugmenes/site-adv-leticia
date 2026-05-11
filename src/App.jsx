@@ -5,6 +5,7 @@ import About from './components/About'
 import Differentials from './components/Differentials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AgentFloat from './components/AgentFloat'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <AgentFloat />
     </>
   )
 }
