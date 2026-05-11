@@ -5,7 +5,6 @@ import About from './components/About'
 import Differentials from './components/Differentials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import WhatsAppFloat from './components/WhatsAppFloat'
 
 export default function App() {
   return (
@@ -19,7 +18,6 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-      <WhatsAppFloat />
     </>
   )
 }
