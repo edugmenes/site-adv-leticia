@@ -5,7 +5,7 @@ import About from './components/About'
 import Differentials from './components/Differentials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import { HurcaneWidget } from 'hurcane-react'
+import WhatsAppFloat from './components/WhatsAppFloat'
 
 export default function App() {
   return (
@@ -17,14 +17,9 @@ export default function App() {
         <About />
         <Differentials />
         <Contact />
+        <WhatsAppFloat />
       </main>
       <Footer />
-      <HurcaneWidget
-        agentId="tire-suas-duvidas-1778523717415"
-        color="#C4952E"
-        theme="light"
-        position="bottom-right"
-      />
     </>
   )
 }
