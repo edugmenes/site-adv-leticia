@@ -162,7 +162,7 @@ export default function Services() {
             href="https://wa.me/5511959876073?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20meus%20direitos%20trabalhistas."
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary !bg-navy-800 hover:!bg-navy-700 !shadow-[0_2px_12px_rgba(15,27,48,0.18)] hover:!shadow-[0_4px_20px_rgba(15,27,48,0.32)]"
+            className="btn-primary !bg-navy-800 hover:!bg-navy-700"
             aria-label="Tirar dúvida pelo WhatsApp"
           >
             Tirar minha dúvida agora

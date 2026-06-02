@@ -42,8 +42,6 @@
     @apply inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-cream-50
            font-sans font-medium text-sm tracking-wide px-8 py-3.5 rounded-full
            transition-all duration-300 ease-out
-           shadow-[0_2px_12px_rgba(179,133,45,0.18)]
-           hover:shadow-[0_4px_20px_rgba(179,133,45,0.32)]
            active:scale-[0.98];
   }
 
@@ -65,8 +63,6 @@
     @apply inline-flex items-center gap-3 bg-gold-600 hover:bg-gold-500 text-cream-50
            font-sans font-medium text-sm tracking-wide px-8 py-3.5 rounded-full
            transition-all duration-300 ease-out
-           shadow-[0_2px_12px_rgba(179,133,45,0.18)]
-           hover:shadow-[0_4px_20px_rgba(179,133,45,0.32)]
            active:scale-[0.98];
   }
 

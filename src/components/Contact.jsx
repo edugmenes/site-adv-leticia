@@ -217,7 +217,7 @@
                         Suas informações são confidenciais e utilizadas apenas para retorno de contato.
                       </p>
 
-                      <button type="submit" className="btn-primary w-full min-[460px]:w-auto justify-center !bg-navy-800 hover:!bg-navy-700 !shadow-[0_2px_12px_rgba(15,27,48,0.18)] hover:!shadow-[0_4px_20px_rgba(15,27,48,0.32)]">
+                      <button type="submit" className="btn-primary w-full min-[460px]:w-auto justify-center !bg-navy-800 hover:!bg-navy-700">
                         Enviar mensagem
                       </button>
                     </div>
