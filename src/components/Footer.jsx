@@ -2,9 +2,7 @@ const currentYear = new Date().getFullYear()
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-900 border-t border-navy-700" role="contentinfo">
-      {/* Top rule accent */}
-      <div className="h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent" aria-hidden="true" />
+    <footer className="bg-navy-900" role="contentinfo">
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-14 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
@@ -101,7 +99,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-navy-700 flex flex-col items-center gap-3 text-center sm:flex-row sm:justify-between sm:text-left">
+        <div className="mt-12 pt-8 border-t border-navy-800/60 flex flex-col items-center gap-3 text-center sm:flex-row sm:justify-between sm:text-left">
           <p className="font-sans text-xs text-navy-400">
             © {currentYear} Dra. Letícia Bertolini — Todos os direitos reservados.
           </p>

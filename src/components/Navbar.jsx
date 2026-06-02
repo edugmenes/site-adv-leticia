@@ -88,7 +88,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={close}
-                className="block py-3 font-sans text-sm text-navy-200 hover:text-gold-400 transition-colors border-b border-navy-800"
+                className="block py-3 font-sans text-sm text-navy-200 hover:text-gold-400 transition-colors border-b border-navy-800/50"
               >
                 {link.label}
               </a>

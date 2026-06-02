@@ -33,10 +33,7 @@ export default function Hero() {
 
           {/* LEFT — content */}
           <div className="lg:col-span-7 space-y-8">
-            <div className="flex items-center gap-4 animate-fade-up" style={{ opacity: 0 }}>
-              <div className="gold-divider" />
-              <span className="section-label" style={{ color: '#C4952E' }}>Direito do Trabalho e Processo do Trabalho</span>
-            </div>
+            <span className="section-label animate-fade-up block" style={{ opacity: 0, color: '#C4952E' }}>Advogada Trabalhista</span>
 
             <h1
               className="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.08] font-medium text-cream-50 text-balance animate-fade-up animate-delay-100"
@@ -77,7 +74,7 @@ export default function Hero() {
 
             {/* Trust bar */}
             <div
-              className="pt-4 border-t border-navy-700 flex flex-wrap gap-6 animate-fade-up animate-delay-400"
+              className="pt-6 flex flex-wrap gap-6 animate-fade-up animate-delay-400"
               style={{ opacity: 0 }}
             >
               {[
@@ -100,13 +97,15 @@ export default function Hero() {
             aria-hidden="true"
           >
             <div className="relative w-64 h-80 md:w-80 md:h-[420px]">
-              <img
-                src={foto03}
-                alt="Dra. Letícia Bertolini — Advogada Trabalhista"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute -bottom-3 -right-3 w-16 h-16 border-r-2 border-b-2 border-gold-500/60" />
-              <div className="absolute -top-3 -left-3 w-16 h-16 border-l-2 border-t-2 border-gold-500/60" />
+              <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                <img
+                  src={foto03}
+                  alt="Dra. Letícia Bertolini — Advogada Trabalhista"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-3 -right-3 w-16 h-16 border-r-2 border-b-2 border-gold-500/60 rounded-br-2xl" />
+              <div className="absolute -top-3 -left-3 w-16 h-16 border-l-2 border-t-2 border-gold-500/60 rounded-tl-2xl" />
             </div>
           </div>
 

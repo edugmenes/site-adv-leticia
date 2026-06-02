@@ -63,22 +63,15 @@
     return (
       <section
         id="contato"
-        className="relative py-24 md:py-32 bg-navy-50"
+        className="relative min-h-screen flex items-center bg-navy-50"
         aria-labelledby="contato-heading"
       >
-        <div
-          className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent"
-          aria-hidden="true"
-        />
 
-        <div className="max-w-7xl mx-auto px-6 md:px-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 pt-28 pb-20 md:pt-36 md:pb-28 w-full">
           <div className="grid md:grid-cols-12 gap-16">
             <div className="md:col-span-5 space-y-10">
               <div>
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="gold-divider" />
-                  <span className="section-label">Contato</span>
-                </div>
+                <span className="section-label block mb-6">Contato</span>
 
                 <h2
                   id="contato-heading"
@@ -138,14 +131,14 @@
             </div>
 
             <div className="md:col-span-7">
-              <div className="bg-white border border-navy-100 p-8 md:p-10">
+              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-[0_2px_16px_rgba(15,27,48,0.07)]">
                 <h3 className="font-display text-xl font-semibold text-navy-800 mb-8">
                   Envie uma mensagem
                 </h3>
 
                 {sent ? (
                   <div className="py-12 text-center space-y-3">
-                    <div className="text-gold-400 text-3xl" aria-hidden="true">
+                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gold-500/10 text-gold-400 text-xl" aria-hidden="true">
                       ✓
                     </div>
                     <p className="font-body text-navy-700 text-lg">Mensagem enviada!</p>
@@ -201,7 +194,7 @@
                         className={`w-full bg-cream-50 border ${errors.mensagem
                           ? 'border-red-500'
                           : 'border-navy-100 focus:border-gold-500'
-                          } text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200 resize-none`}
+                          } text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 rounded-md outline-none transition-colors duration-200 resize-none`}
                       />
 
                       <div className="flex justify-between gap-4">
@@ -224,7 +217,7 @@
                         Suas informações são confidenciais e utilizadas apenas para retorno de contato.
                       </p>
 
-                      <button type="submit" className="btn-primary w-full min-[460px]:w-auto justify-center">
+                      <button type="submit" className="btn-primary w-full min-[460px]:w-auto justify-center !bg-navy-800 hover:!bg-navy-700 !shadow-[0_2px_12px_rgba(15,27,48,0.18)] hover:!shadow-[0_4px_20px_rgba(15,27,48,0.32)]">
                         Enviar mensagem
                       </button>
                     </div>
@@ -268,7 +261,7 @@
           aria-invalid={error ? 'true' : 'false'}
           aria-describedby={error ? `${id}-error` : undefined}
           className={`w-full bg-cream-50 border ${error ? 'border-red-500' : 'border-navy-100 focus:border-gold-500'
-            } text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 outline-none transition-colors duration-200`}
+            } text-navy-800 placeholder-navy-300 font-sans text-sm px-4 py-3 rounded-xl outline-none transition-colors duration-200`}
         />
 
         {error && (

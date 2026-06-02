@@ -44,24 +44,12 @@ export default function Differentials() {
       className="relative py-24 md:py-32 bg-cream-100"
       aria-labelledby="diferenciais-heading"
     >
-      {/* Background accent */}
-      <div
-        className="absolute right-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/20 to-transparent pointer-events-none"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent pointer-events-none"
-        aria-hidden="true"
-      />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         {/* Header */}
         <div className="mb-16 md:mb-20 grid md:grid-cols-2 gap-10 items-end">
           <div>
-            <div className="flex items-center gap-4 mb-6">
-              <div className="gold-divider" />
-              <span className="section-label">Diferenciais</span>
-            </div>
+            <span className="section-label block mb-6">Diferenciais</span>
             <h2
               id="diferenciais-heading"
               className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-navy-900 leading-tight"
@@ -96,14 +84,12 @@ export default function Differentials() {
                   </p>
                 </div>
               </div>
-              {/* Divider */}
-              <div className="mt-6 h-px bg-navy-100 group-hover:bg-gold-500/20 transition-colors duration-300" />
             </article>
           ))}
         </div>
 
         {/* Pull quote */}
-        <blockquote className="mt-20 md:mt-24 border-l-2 border-gold-500 pl-8 max-w-2xl mx-auto text-center md:text-left">
+        <blockquote className="mt-20 md:mt-24 max-w-xl mx-auto text-center">
           <p className="font-display text-xl md:text-2xl italic text-navy-700 leading-relaxed">
             "A advocacia que acredito é aquela em que o cliente sai sabendo
             exatamente o que aconteceu e sente que foi tratado com respeito."
