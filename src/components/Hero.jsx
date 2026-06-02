@@ -104,8 +104,8 @@ export default function Hero() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-3 -right-3 w-16 h-16 border-r-2 border-b-2 border-gold-500/60 rounded-br-2xl" />
-              <div className="absolute -top-3 -left-3 w-16 h-16 border-l-2 border-t-2 border-gold-500/60 rounded-tl-2xl" />
+              <div className="absolute -bottom-3 -right-3 w-16 h-16 border-r-2 border-b-2 border-gold-500/60 rounded-br-[28px]" />
+              <div className="absolute -top-3 -left-3 w-16 h-16 border-l-2 border-t-2 border-gold-500/60 rounded-tl-[28px]" />
             </div>
           </div>
 
