@@ -22,10 +22,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 backdrop-blur-md border-b ${
         scrolled
-          ? 'bg-navy-950/95 backdrop-blur-sm border-b border-navy-800'
-          : 'bg-transparent'
+          ? 'bg-navy-950/85 border-white/10'
+          : 'bg-navy-950/50 border-white/5'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
@@ -88,7 +88,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={close}
-                className="block py-3 font-sans text-sm text-navy-200 hover:text-gold-400 transition-colors border-b border-navy-800"
+                className="block py-3 font-sans text-sm text-navy-200 hover:text-gold-400 transition-colors border-b border-navy-800/50"
               >
                 {link.label}
               </a>

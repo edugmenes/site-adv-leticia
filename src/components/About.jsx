@@ -21,39 +21,32 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className="relative py-24 md:py-32 bg-navy-50"
+      className="relative min-h-screen flex items-center bg-navy-50"
       aria-labelledby="sobre-heading"
     >
-      {/* Top rule */}
-      <div
-        className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent"
-        aria-hidden="true"
-      />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 pt-28 pb-20 md:pt-36 md:pb-28 w-full">
+        <span className="section-label block mb-10">Sobre</span>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
           {/* LEFT — Photo block */}
           <div className="lg:col-span-4 flex justify-center lg:justify-start" aria-hidden="true">
-            <div  ref={imgRef} className="relative w-64 h-80 md:w-80 md:h-[420px] shrink-0 opacity-0">
-              <img
-                src={foto01}
-                alt="Dra. Letícia Bertolini — Advogada Trabalhista"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              {/* Gold accent corners */}
-              <div className="absolute -bottom-4 -right-4 w-20 h-20 border-r border-b border-gold-500/50" />
-              <div className="absolute -top-4 -left-4 w-20 h-20 border-l border-t border-gold-500/50" />
+            <div ref={imgRef} className="relative w-64 h-80 md:w-80 md:h-[420px] shrink-0 opacity-0">
+              <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                <img
+                  src={foto01}
+                  alt="Dra. Letícia Bertolini — Advogada Trabalhista"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 border-r border-b border-gold-500/50 rounded-br-[32px]" />
+              <div className="absolute -top-4 -left-4 w-20 h-20 border-l border-t border-gold-500/50 rounded-tl-[32px]" />
             </div>
           </div>
 
           {/* RIGHT — Content */}
-          <div className="lg:col-span-8 space-y-6">
-            <div className="flex items-center gap-4">
-              <div className="gold-divider" />
-              <span className="section-label">Sobre</span>
-            </div>
-
+          <div className="lg:col-span-8 space-y-8">
             <h2
               id="sobre-heading"
               className="font-display text-3xl md:text-4xl font-medium text-navy-900 leading-tight"
@@ -61,7 +54,7 @@ export default function About() {
               Advocacia com <span className="italic text-gold-400">propósito</span> e compromisso real
             </h2>
 
-            <div className="space-y-4 font-body text-navy-600 text-lg leading-relaxed">
+            <div className="mt-12 space-y-4 font-body text-navy-600 text-lg leading-relaxed">
               <p>
                 Sou advogada especializada em Direito do Trabalho e Processo do Trabalho,
                 com atuação dedicada à defesa de trabalhadores que enfrentam situações de
@@ -80,9 +73,9 @@ export default function About() {
             </div>
 
             {/* Credentials bar — restrained */}
-            <div className="pt-6 border-t border-navy-100 grid sm:grid-cols-3 gap-6">
+            <div className="pt-6 grid sm:grid-cols-3 gap-6">
               {[
-                { value: 'Especialista', label: 'Direito do Trabalho' },
+                { value: 'Especialista', label: 'Direito do Trabalho e Processo do Trabalho' },
                 { value: '+3 Anos de', label: 'de Experiência' },
                 { value: '+20 Casos', label: 'Bem Sucedidos' },
               ].map(item => (

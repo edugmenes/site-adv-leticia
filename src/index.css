@@ -37,41 +37,40 @@
     @apply w-12 h-px bg-gold-500;
   }
 
-  /* Primary button — used on light backgrounds */
+  /* Primary button — pill shape, used on light backgrounds */
   .btn-primary {
     @apply inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-cream-50
-           font-sans font-medium text-sm tracking-wide px-7 py-3.5
+           font-sans font-medium text-sm tracking-wide px-8 py-3.5 rounded-full
            transition-all duration-300 ease-out
-           hover:shadow-[0_0_24px_rgba(179,133,45,0.35)]
            active:scale-[0.98];
   }
 
-  /* Outline button — dark variant for hero (navy bg) */
+  /* Outline button — pill shape, dark variant for hero (navy bg) */
   .btn-outline {
-    @apply inline-flex items-center gap-2 border border-navy-400 hover:border-gold-500
+    @apply inline-flex items-center gap-2 border border-navy-400/60 hover:border-gold-500/70
            text-navy-100 hover:text-gold-400 font-sans font-medium text-sm tracking-wide
-           px-7 py-3.5 transition-all duration-300 ease-out;
+           px-8 py-3.5 rounded-full transition-all duration-300 ease-out;
   }
 
-  /* Outline button — light variant for cream sections */
+  /* Outline button — softer variant for cream sections */
   .btn-outline-light {
-    @apply inline-flex items-center gap-2 border border-navy-300 hover:border-gold-500
+    @apply inline-flex items-center gap-2 border border-navy-200 hover:border-gold-400
            text-navy-600 hover:text-gold-600 font-sans font-medium text-sm tracking-wide
-           px-7 py-3.5 transition-all duration-300 ease-out;
+           px-7 py-3.5 rounded-lg transition-all duration-300 ease-out;
   }
 
   .btn-whatsapp {
-    @apply inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20BC5A] text-white
-           font-sans font-medium text-sm tracking-wide px-7 py-3.5
+    @apply inline-flex items-center gap-3 bg-gold-600 hover:bg-gold-500 text-cream-50
+           font-sans font-medium text-sm tracking-wide px-8 py-3.5 rounded-full
            transition-all duration-300 ease-out
-           hover:shadow-[0_0_24px_rgba(37,211,102,0.3)]
            active:scale-[0.98];
   }
 
-  /* Card — used on cream/light backgrounds */
+  /* Card — borderless, shadow-driven depth */
   .card-service {
-    @apply p-7 border border-navy-100 hover:border-gold-500/40
-           bg-white hover:bg-cream-50
+    @apply p-7 bg-white rounded-2xl
+           shadow-[0_1px_4px_rgba(15,27,48,0.06)]
+           hover:shadow-[0_6px_24px_rgba(15,27,48,0.09)]
            transition-all duration-300 ease-out cursor-default;
   }
 }
